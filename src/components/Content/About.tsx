@@ -1,5 +1,6 @@
 import avt from '@/assets/img/about/avt.jpg'
 import myCV from '@/assets/CV_Lê_Phan_Hải_Long.pdf'
+import { TypeAnimation } from 'react-type-animation'
 const About = () => {
   return (
     <>
@@ -27,42 +28,62 @@ const About = () => {
                 </div>
                 <div className="rightbox">
                   <div className="arlo_tm_mini_title_holder">
-                    <h4>I'm Alan Michaelis and <span className="arlo_tm_animation_text_word"></span></h4>
+                    <h4>Hi there...I'm a
+                      &nbsp;
+                      <TypeAnimation
+                        sequence={[
+                          // Same substring at the start will only be typed out once, initially
+                          'Freelancer',
+                          2000, // wait 1s before replacing "Mice" with "Hamsters"
+                          'UI/UX Designer',
+                          2000,
+                          'Web Developer',
+                          2000,
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        // style={{ fontSize: '2em', display: 'inline-block' }}
+                        repeat={Infinity}
+                      />
+                      <span className="arlo_tm_animation_text_word"></span></h4>
                   </div>
                   <div className="definition">
-                    <p>Hi! My name is <strong>Alan Michaelis</strong>. I am a Web Developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                    <p>Xin chào, mình là <strong>Long</strong>. Là một lập trình viên website, code toàn bug, nhưng mình vẫn rất thích code _._</p>
+                  </div>
+                  <div className="definition">
+                    <p>Hiện tại mình đang sinh viên năm 2. Đang học tại trường đại học công nghệ thông tin và truyền thông Việt-Hàn. Mình chọn ngành này vì tưởng IT lương nghìn đô nhưng hơi hối hận ~.~</p>
                   </div>
                   <div className="about_short_contact_wrap">
                     <ul>
                       <li>
-                        <span><label>Birthday:</label> 01.07.1990</span>
+                        <span><label>Ngày sinh:</label> 17.02.2005</span>
                       </li>
                       <li>
-                        <span><label>Age:</label> 28</span>
+                        <span><label>Giới tính:</label> Nam</span>
                       </li>
                       <li>
-                        <span><label>City:</label> New York, USA</span>
+                        <span><label>Trường:</label> Đại học Việt-Hàn</span>
                       </li>
                       <li>
-                        <span><label>Interests:</label> Soccer, UFC</span>
+                        <span><label>Chuyên ngành:</label> Kỹ sư Công Nghệ Phần Mềm</span>
                       </li>
                       <li>
-                        <span><label>Study:</label> Chicago University</span>
+                        <span><label>GPA:</label> 3.31</span>
                       </li>
                       <li>
-                        <span><label>Degree:</label> Master</span>
+                        <span><label>Địa chỉ:</label> Thành phố Đà Nẵng</span>
                       </li>
                       <li>
-                        <span><label>Website:</label> <a href="#">www.mywebsite.com</a></span>
+                        <span><label>GitHub:</label> <a target='_blank' href="https://github.com/longlephanhai">longlephanhai</a></span>
+                      </li>
+                      <li>
+                        <span><label>Facebook:</label> Lê Phan Hải Long</span>
                       </li>
                       <li>
                         <span><label>Mail:</label> <a href="mailto:example@gmail.com">mymail&#64;gmail.com</a></span>
                       </li>
                       <li>
-                        <span><label>Phone:</label> <a href="#">+77 022 177 05 05</a></span>
-                      </li>
-                      <li>
-                        <span><label>Twitter:</label> <a href="#">&#64;myusername</a></span>
+                        <span><label>Phone:</label> <a href="#">+86 077 xxx xxx</a></span>
                       </li>
                     </ul>
                   </div>
