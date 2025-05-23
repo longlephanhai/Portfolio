@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import Portfolio from "./screens/portfolio"
+
 
 function App() {
+
   return (
-    <div>abc</div>
+    <Portfolio />
   )
 }
 
