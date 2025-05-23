@@ -3,11 +3,12 @@ import Contact from "./Content/Contact"
 import HomeCV from "./Content/HomeCV"
 import Project from "./Content/Project"
 import Skill from "./Content/Skill"
+import { IProps } from "./LeftPart"
 
-const RightPart = () => {
+const RightPart = (props: IProps) => {
   return (
     <>
-      <div className="arlo_tm_rightpart">
+      <div className={props.hideLeftPart ? "arlo_tm_rightpart_wrap opened" : "arlo_tm_rightpart"}>
         <div className="rightpart_inner">
           {/* HOME */}
           <HomeCV />

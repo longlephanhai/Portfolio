@@ -1,8 +1,14 @@
 import logo from '@/assets/img/logo/desktop-logo.png'
-const LeftPart = () => {
+
+export interface IProps {
+  hideLeftPart: boolean
+  setHideLeftPart: (value: boolean) => void
+}
+
+const LeftPart = (props: IProps) => {
   return (
     <>
-      <div className="arlo_tm_leftpart_wrap">
+      <div className={props.hideLeftPart === true ? "arlo_tm_leftpart_wrap opened" : "arlo_tm_leftpart_wrap"}>
         <div className="leftpart_inner">
           <div className="logo_wrap">
             <a href="#"><img src={logo} alt="desktop-logo" /></a>
@@ -27,7 +33,13 @@ const LeftPart = () => {
               </ul>
             </div>
           </div>
-          <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a>
+          <a
+            onClick={() => props.setHideLeftPart(!props.hideLeftPart)}
+            className={props.hideLeftPart ? "arlo_tm_resize opened" : "arlo_tm_resize"}
+            href="#"
+          >
+            <i className={props.hideLeftPart ? "xcon-angle-left opened" : "xcon-angle-left"}></i>
+          </a>
         </div>
       </div>
     </>
