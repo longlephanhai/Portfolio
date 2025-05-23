@@ -80,7 +80,7 @@ const About = () => {
                         <span><label>Facebook:</label> Lê Phan Hải Long</span>
                       </li>
                       <li>
-                        <span><label>Mail:</label> <a href="mailto:example@gmail.com">mymail&#64;gmail.com</a></span>
+                        <span><label>Mail:</label> <a href="mailto:longlph.23it@gmail.com">longlph.23it&#64;gmail.com</a></span>
                       </li>
                       <li>
                         <span><label>Phone:</label> <a href="#">+86 077 xxx xxx</a></span>
