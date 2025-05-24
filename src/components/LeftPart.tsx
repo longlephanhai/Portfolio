@@ -1,5 +1,5 @@
 import logo from '@/assets/img/logo/desktop-logo.png'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export interface IProps {
   hideLeftPart: boolean
@@ -7,7 +7,19 @@ export interface IProps {
 }
 
 const LeftPart = (props: IProps) => {
-  const [activeTab, setActiveTab] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<string>("home");
+
+  useEffect(() => {
+    const { hash } = window.location
+    if (hash) {
+      const tab = hash.replace('#', '');
+      setActiveTab(tab);
+      const section = document.querySelector(`${hash}`);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [])
 
   const handleClickTab = (tab: string, e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
@@ -15,6 +27,9 @@ const LeftPart = (props: IProps) => {
     const section = document.querySelector(`#${tab}`);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setTimeout(() => {
+        window.location.hash = tab;
+      }, 1000)
     }
   }
   return (
