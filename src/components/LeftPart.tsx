@@ -1,4 +1,5 @@
 import logo from '@/assets/img/logo/desktop-logo.png'
+import React, { useState } from 'react'
 
 export interface IProps {
   hideLeftPart: boolean
@@ -6,6 +7,16 @@ export interface IProps {
 }
 
 const LeftPart = (props: IProps) => {
+  const [activeTab, setActiveTab] = useState<string>("");
+
+  const handleClickTab = (tab: string, e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    setActiveTab(tab)
+    const section = document.querySelector(`#${tab}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
   return (
     <>
       <div className={props.hideLeftPart === true ? "arlo_tm_leftpart_wrap opened" : "arlo_tm_leftpart_wrap"}>
@@ -15,11 +26,28 @@ const LeftPart = (props: IProps) => {
           </div>
           <div className="menu_list_wrap">
             <ul className="anchor_nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="#home"
+                  className={activeTab === 'home' ? "active" : ""}
+                  onClick={(e) => handleClickTab('home', e)}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className={activeTab === 'about' ? "active" : ""}
+                  onClick={(e) => handleClickTab('about', e)}>
+                  About
+                </a>
+              </li>
+              <li><a href="#skills" className={activeTab === 'skills' ? "active" : ""}
+                onClick={(e) => handleClickTab('skills', e)}>Skills</a></li>
+              <li><a href="#projects" className={activeTab === 'projects' ? "active" : ""}
+                onClick={(e) => handleClickTab('projects', e)}>Projects</a></li>
+              <li><a href="#contact" className={activeTab === 'contact' ? "active" : ""}
+                onClick={(e) => handleClickTab('contact', e)}>Contact</a></li>
             </ul>
           </div>
           <div className="leftpart_bottom">
