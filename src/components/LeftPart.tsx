@@ -1,4 +1,4 @@
-import logo from '@/assets/img/logo/desktop-logo.png'
+import logo from '@/assets/img/logo/reactLogo.png'
 import React, { useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect';
 export interface IProps {

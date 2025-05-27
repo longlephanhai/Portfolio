@@ -8,10 +8,11 @@ const Skill = () => {
             <div className="inner_wrap">
               <div className="leftbox">
                 <div className="arlo_tm_mini_title_holder">
-                  <h4>Kỹ năng Frontend</h4>
+                  <h4>Frontend Skills</h4>
                 </div>
-                <li>Cắt/ghép template Website Responsive</li>
-                <li>Framework/Library: ReactJS, NextJS, Antd, TailWindCSS</li>
+                <li>Slicing and integrating responsive website templates</li>
+                <li>Frameworks/Libraries: ReactJS, NextJS, Bootstrap 4</li>
+                <li>Core Technologies: HTML, CSS, JavaScript</li>
               </div>
               <div className="rightbox">
                 <div className="progress_bar_wrap_total">
@@ -19,11 +20,11 @@ const Skill = () => {
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
                         <span className="label">HTML/CSS/JavaScript</span>
-                        <span className="number">95%</span>
+                        <span className="number">80%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={80}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}
@@ -32,12 +33,12 @@ const Skill = () => {
                     </div>
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
-                        <span className="label">ReactJS (TypeScript)</span>
-                        <span className="number">95%</span>
+                        <span className="label">ReactJS (NextJS)</span>
+                        <span className="number">80%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={80}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}
@@ -47,11 +48,11 @@ const Skill = () => {
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
                         <span className="label">Design UI/UX</span>
-                        <span className="number">95%</span>
+                        <span className="number">80%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={80}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}
@@ -71,12 +72,12 @@ const Skill = () => {
             <div className="inner_wrap">
               <div className="leftbox">
                 <div className="arlo_tm_mini_title_holder">
-                  <h4>Kỹ năng Backend</h4>
+                  <h4>Backend Skills</h4>
                 </div>
-                <li>Ngôn ngữ lập trình: JavaScript, Java</li>
-                <li>Framework: ExpressJS, NestJS, SpringBoot</li>
-                <li>Database: MySQL, MongoDB</li>
-                <li>Viết Resful APIs</li>
+                <li>Programming Languages: JavaScript, Java</li>
+                <li>Frameworks: ExpressJS, NestJS, Spring Boot</li>
+                <li>Databases: MySQL, MongoDB</li>
+                <li>Experienced in building and designing RESTful APIs</li>
               </div>
               <div className="rightbox">
                 <div className="progress_bar_wrap_total">
@@ -84,11 +85,11 @@ const Skill = () => {
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
                         <span className="label">ExpressJS/NestJS</span>
-                        <span className="number">95%</span>
+                        <span className="number">75%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={75}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}
@@ -98,11 +99,11 @@ const Skill = () => {
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
                         <span className="label">JavaSpring</span>
-                        <span className="number">95%</span>
+                        <span className="number">75%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={75}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}
@@ -112,11 +113,11 @@ const Skill = () => {
                     <div className="arlo_tm_progress" data-color="#000">
                       <span>
                         <span className="label">Database MySQL/MongoDB</span>
-                        <span className="number">95%</span>
+                        <span className="number">75%</span>
                       </span>
                       <div className="arlo_tm_bar_bg">
                         <ProgressBar
-                          completed={95}
+                          completed={75}
                           bgColor="#333"
                           height="8px"
                           isLabelVisible={false}

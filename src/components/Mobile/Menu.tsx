@@ -1,4 +1,4 @@
-import MobileLogo from '@/assets/img/logo/mobile_logo.png'
+import MobileLogo from '@/assets/img/logo/reactLogoMobile.png'
 import { useState } from 'react';
 
 const MobileMenu = () => {

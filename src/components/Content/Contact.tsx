@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="container">
               <div className="leftbox">
                 <div className="arlo_tm_mini_title_holder contact">
-                  <h4>Thông tin liên hệ</h4>
+                  <h4>Contact Information</h4>
                 </div>
                 <div className="short_info_wrap">
                   <ul>
@@ -21,10 +21,13 @@ const Contact = () => {
                       <p><label>Email:</label><span><a href="mailto:longlph.23it@gmail.com">longlph.23it@gmail.com</a></span></p>
                     </li>
                     <li>
-                      <p><label>Phone:</label><span>+86 xxx xxx xx xx</span></p>
+                      <p><label>Phone:</label><span>+84 077 519 548</span></p>
                     </li>
                     <li>
                       <p><label>Github:</label><span><a href="https://github.com/longlephanhai" target="_blank">https://github.com/longlephanhai</a></span></p>
+                    </li>
+                    <li>
+                      <p><label>FaceBook:</label><span><a href="https://www.facebook.com/le.phan.hai.long" target="_blank">Lê Phan Hải Long</a></span></p>
                     </li>
                   </ul>
                 </div>

@@ -10,7 +10,7 @@ interface IDetail {
   backend: string,
   member: number,
   role: string,
-  demo: string,
+  demo: string | null,
   github: string
 }
 interface IDataProject {
@@ -46,10 +46,10 @@ const Project = () => {
         }}
         color={'#2bebfd'}
       />,
-      title: "Website bán sách kết hợp mạng xã hội",
-      shortDescription: "Website bán sách kết hợp mạng xã hội, nơi người dùng có thể đăng bài viết, bình luận và tương tác với nhau",
+      title: "Bookstore Website with Social Networking",
+      shortDescription: "A bookstore website combined with social networking where users can post articles, comment, and interact with each other.",
       detail: {
-        description: "Website bán sách kết hợp mạng xã hội, nơi người dùng có thể đăng bài viết, bình luận và tương tác với nhau",
+        description: "A bookstore website integrated with social networking features, allowing users to post articles, comment, and interact with other users.",
         frontend: "ReactJS, Redux Toolkit, Ant Design",
         backend: "NodeJS (ExpressJS), MongoDB",
         member: 1,
@@ -66,15 +66,15 @@ const Project = () => {
         }}
         color={'#7CB701'}
       />,
-      title: "Quản lý kho hàng",
-      shortDescription: "Quản lý kho hàng là một ứng dụng web giúp người dùng quản lý hàng hóa trong kho, theo dõi số lượng, giá trị và tình trạng của hàng hóa.",
+      title: "Warehouse Management System",
+      shortDescription: "A web application that helps users manage warehouse inventory by tracking quantities, values, and statuses of goods.",
       detail: {
-        description: "Quản lý kho hàng là một ứng dụng web giúp người dùng quản lý hàng hóa trong kho, theo dõi số lượng, giá trị và tình trạng của hàng hóa.",
-        frontend: "ReactJS, Redux Toolkit, Ant Design",
+        description: "A warehouse management web app designed to help users oversee goods, monitor stock levels, value, and status of inventory.",
+        frontend: "Pug, Bootstrap",
         backend: "NodeJS (ExpressJS), MongoDB",
         member: 1,
         role: "Developer",
-        demo: "https://product-manager-lemon.vercel.app/",
+        demo: null,
         github: "https://github.com/longlephanhai/product-manager"
       }
     },
@@ -86,11 +86,11 @@ const Project = () => {
         }}
         color={'#D9224C'}
       />,
-      title: "Website hổ trợ học tiếng anh với AI",
-      shortDescription: "Website hổ trợ học tiếng anh với AI, nơi người dùng có thể học từ vựng, ngữ pháp và luyện nghe nói với AI",
+      title: "AI-Powered English Learning Website",
+      shortDescription: "A website supporting English learning with AI, where users can study vocabulary, grammar, and practice listening and speaking skills.",
       detail: {
-        description: "Website hổ trợ học tiếng anh với AI, nơi người dùng có thể học từ vựng, ngữ pháp và luyện nghe nói với AI",
-        frontend: "ReactJS, Redux Toolkit, Ant Design",
+        description: "An AI-powered English learning platform allowing users to study vocabulary, grammar, and practice listening and speaking with AI assistance.",
+        frontend: "ReactJS, Redux, Ant Design",
         backend: "NodeJS (NestJS), MongoDB",
         member: 1,
         role: "Developer",
@@ -112,16 +112,22 @@ const Project = () => {
         {
           dataDetail && (
             <ul>
-              <li>Miêu tả: {dataDetail.detail.description}</li>
+              <li>Description: {dataDetail.detail.description}</li>
               <li>Frontend: {dataDetail.detail.frontend}</li>
               <li>Backend: {dataDetail.detail.backend}</li>
-              <li>Số lượng thành viên: {dataDetail.detail.member}</li>
-              <li>Vai trò: {dataDetail.detail.role}</li>
+              <li>Team size: {dataDetail.detail.member}</li>
+              <li>Role: {dataDetail.detail.role}</li>
               <li>
                 Demo:
-                <a href={dataDetail.detail.demo} target='_blank'>
-                  {dataDetail.detail.demo}
-                </a>
+                {
+                  dataDetail.detail.demo ? (
+                    <a href={dataDetail.detail.demo} target='_blank'>
+                      {dataDetail.detail.demo}
+                    </a>
+                  ) : (
+                    " No demo available"
+                  )
+                }
               </li>
               <li>
                 Github:
@@ -138,8 +144,8 @@ const Project = () => {
         <div className="arlo_tm_services_wrap">
           <div className="container">
             <div className="arlo_tm_title_holder">
-              <h3>Amazing Projects</h3>
-              <span>Các dự án đã hoàn thiện</span>
+              <h3>Projects</h3>
+              <span>Projects Completed</span>
             </div>
             <div className="list_wrap">
               <ul>
@@ -168,7 +174,7 @@ const Project = () => {
                           <span style={{ cursor: "pointer" }}>
                             <BsArrowRight />
                             &nbsp;
-                            Xem chi tiết
+                            Detail
                           </span>
                         </div>
                       </div>

@@ -22,7 +22,7 @@ const HomeCV = () => {
                   <img src={logo} alt="hero" />
                 </div>
                 <div className="name_holder">
-                  <h3>Lê Phan Hải <span>Long</span></h3>
+                  <h3>Le Phan Hai <span>Long</span></h3>
                 </div>
                 <div className="text_typing">
                   <p>I'm a

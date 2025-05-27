@@ -1,5 +1,5 @@
 import avt from '@/assets/img/about/avt.jpg'
-import myCV from '@/assets/CV_Lê_Phan_Hải_Long.pdf'
+import myCV from '@/assets/CV_LePhanHaiLong.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import { useEffect, useRef } from 'react'
 import Parallax from 'parallax-js'
@@ -64,42 +64,48 @@ const About = () => {
                       <span className="arlo_tm_animation_text_word"></span></h4>
                   </div>
                   <div className="definition">
-                    <p>Xin chào, mình là <strong>Long</strong>. Là một lập trình viên website, code toàn bug, nhưng mình vẫn rất thích code _._</p>
+                    <p>Hi, I'm <strong>Long</strong>. A second-year student majoring in Information Technology at the Vietnam-Korea University of Information and Communication Technology</p>
                   </div>
                   <div className="definition">
-                    <p>Hiện tại mình đang sinh viên năm 2. Đang học tại trường đại học công nghệ thông tin và truyền thông Việt-Hàn. Mình chọn ngành này vì tưởng IT lương nghìn đô nhưng hơi hối hận ~.~</p>
+                    <p>I'm currently focusing on web development and constantly striving to improve my skills. I was initially drawn to the IT field by its promising career opportunities and high earning potential. Although the journey has turned out to be more challenging than expected, I've come to truly enjoy coding and solving problems through technology.</p>
+                  </div>
+                  <div className="definition">
+                    <p>I'm always eager to learn, improve, and become a developer who not only writes cleaner code but also builds products that matter.</p>
                   </div>
                   <div className="about_short_contact_wrap">
                     <ul>
                       <li>
-                        <span><label>Ngày sinh:</label> 17.02.2005</span>
+                        <span><label>Full Name:</label>Lê Phan Hải Long</span>
                       </li>
                       <li>
-                        <span><label>Giới tính:</label> Nam</span>
+                        <span><label>Date of Birth:</label>February 17, 2005</span>
                       </li>
                       <li>
-                        <span><label>Trường:</label> Đại học Việt-Hàn</span>
+                        <span><label>University:</label>Vietnam - Korea University of Information and Communication Technology</span>
                       </li>
                       <li>
-                        <span><label>Chuyên ngành:</label> Kỹ sư Công Nghệ Phần Mềm</span>
+                        <span><label>Major:</label>Software Engineering</span>
                       </li>
                       <li>
-                        <span><label>GPA:</label> 3.31</span>
+                        <span><label>GPA:</label>3.31</span>
                       </li>
                       <li>
-                        <span><label>Địa chỉ:</label> Thành phố Đà Nẵng</span>
+                        <span><label>Location:</label>Da Nang City, Vietnam</span>
                       </li>
                       <li>
-                        <span><label>GitHub:</label> <a target='_blank' href="https://github.com/longlephanhai">longlephanhai</a></span>
+                        <span><label>GitHub:</label><a target='_blank' href="https://github.com/longlephanhai">longlephanhai</a></span>
                       </li>
                       <li>
-                        <span><label>Facebook:</label> Lê Phan Hải Long</span>
+                        <span><label>Facebook:</label><a target='_blank' href="https://www.facebook.com/le.phan.hai.long">Lê Phan Hải Long</a></span>
                       </li>
                       <li>
-                        <span><label>Mail:</label> <a href="mailto:longlph.23it@gmail.com">longlph.23it&#64;gmail.com</a></span>
+                        <span><label>Mail:</label><a href="mailto:longlph.23it@gmail.com">longlph.23it&#64;gmail.com</a></span>
                       </li>
                       <li>
-                        <span><label>Phone:</label> <a href="#">+86 077 xxx xxx</a></span>
+                        <span><label>Phone:</label>+84 077 519 548</span>
+                      </li>
+                      <li>
+                        <span><label>Linked:</label><a href="https://www.linkedin.com/in/hai-long-le-phan-9292b6329/">hai long le phan</a></span>
                       </li>
                     </ul>
                   </div>
