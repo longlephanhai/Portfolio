@@ -1,5 +1,5 @@
 import avt from '@/assets/img/about/avt.jpg'
-import myCV from '@/assets/img/LePhanHaiLong_CV.pdf'
+import myCV from '@/assets/CV_LePhanHaiLong.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import { useEffect, useRef } from 'react'
 import Parallax from 'parallax-js'
