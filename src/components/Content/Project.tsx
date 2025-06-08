@@ -54,8 +54,8 @@ const Project = () => {
         backend: "NodeJS (ExpressJS), MongoDB",
         member: 1,
         role: "Developer",
-        demo: "https://longtalk.vercel.app/",
-        github: "https://github.com/longlephanhai/education_fe"
+        demo: "https://longlephanhai.vercel.app/",
+        github: "https://github.com/longlephanhai/frontend"
       }
     },
     {
