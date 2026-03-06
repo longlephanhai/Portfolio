@@ -1,5 +1,5 @@
 import avt from '@/assets/img/about/avt.jpg'
-import myCV from '@/assets/CV_LePhanHaiLong.pdf'
+import myCV from '@/assets/LePhanHaiLongResume (1).pdf'
 import { TypeAnimation } from 'react-type-animation'
 import { useEffect, useRef } from 'react'
 import Parallax from 'parallax-js'
@@ -64,7 +64,7 @@ const About = () => {
                       <span className="arlo_tm_animation_text_word"></span></h4>
                   </div>
                   <div className="definition">
-                    <p>Hi, I'm <strong>Long</strong>. A second-year student majoring in Information Technology at the Vietnam-Korea University of Information and Communication Technology</p>
+                    <p>Hi, I'm <strong>Long</strong>. A third-year student majoring in Information Technology at the Vietnam-Korea University of Information and Communication Technology</p>
                   </div>
                   <div className="definition">
                     <p>I'm currently focusing on web development and constantly striving to improve my skills. I was initially drawn to the IT field by its promising career opportunities and high earning potential. Although the journey has turned out to be more challenging than expected, I've come to truly enjoy coding and solving problems through technology.</p>
@@ -87,7 +87,7 @@ const About = () => {
                         <span><label>Major:</label>Software Engineering</span>
                       </li>
                       <li>
-                        <span><label>GPA:</label>3.31</span>
+                        <span><label>GPA:</label>3.2</span>
                       </li>
                       <li>
                         <span><label>Location:</label>Da Nang City, Vietnam</span>
@@ -102,7 +102,7 @@ const About = () => {
                         <span><label>Mail:</label><a href="mailto:longlph.23it@gmail.com">longlph.23it&#64;gmail.com</a></span>
                       </li>
                       <li>
-                        <span><label>Phone:</label>+84 077 519 548</span>
+                        <span><label>Phone:</label>+84 77 519 548</span>
                       </li>
                       <li>
                         <span><label>Linked:</label><a href="https://www.linkedin.com/in/hai-long-le-phan-9292b6329/">hai long le phan</a></span>
